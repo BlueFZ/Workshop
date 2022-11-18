@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+:root {
+	--primary: #171565;
+	--secondary: #f0b505;
+	--grad: #4840be;
+	--temp: #dde1e7;
+	--nav: #443cb6;
+	--txt: #515050;
+}
+
+* {
+	font-family: "Poppins";
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-image: linear-gradient(to bottom right, var(--grad), var(--primary));
+	scroll-behavior: smooth;
+	color: white;
+}
+
+header {
+	display: inline;
+}
+
+main {
+	padding: 20px 150px;
+	overflow: auto;
+}
+
+#home {
+	padding: 75px;
+	width: 100%;
+	background-image: linear-gradient(to right, var(--grad), var(--primary));
+	color: white;
+	text-align: center;
+}
+
+nav {
+	background:#171565;
+	text-align: center;
+	/* margin-top: 20px; */
+	padding: 10px;
+  position: sticky;
+  top: 0px;
+}
+
+nav a {
+	border-radius: 5px;
+	margin-right: 5px;
+	padding: 5px 12px;
+	background-image: linear-gradient(to bottom right, var(--grad), var(--primary));
+	color: white;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+	text-decoration: none;
+	transition: padding .15s;
+}
+
+nav a:hover {
+	padding: 6px 13px;
+	font-weight: 600;
+}
+
+nav a:active {
+	padding: 4px 11px
+}
+
+.card {
+	padding: 20px;
+	margin-top: 20px;
+	border: 5px;
+	border-radius: 15px;
+	box-shadow: inset -3px -3px 7px var(--primary), inset 3px 3px 7px var(--grad);
+	overflow: auto;
+}
+
+hr {
+	border-color: white;
+	border-width: 1px;
+}
+
+section {
+	margin: 25px;
+}
+
+#trackeat h2{
+	margin-bottom: 1px;
+}
+
+#trackeat figure{
+	margin-top: 16px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+form {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.button {
+	border: none;
+	border-radius: 10px;
+	background-color: var(--secondary);
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: font-weight .35s, background-color .35s, transform .35s;
+}
+
+.button:hover {
+	font-weight: bold;
+	background-color: #cfa423;
+	transform: translateY(-5px);
+}
+
+.preview {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.preview img {
+	margin-right: 20px;
+}
+
+#list {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+
+	main {
+		padding: 16px;
+	}
+
+	nav {
+    display: block;
+		padding-left: 10px;
+  }
+
+  nav a{
+    display: block;
+    margin: 20px 0;
+	}
+}

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+:root {
+	--primary: #171565;
+	--secondary: #f0b505;
+	--grad: #4840be;
+	--temp: #dde1e7;
+	--nav: #443cb6;
+	--txt: #515050;
+}
+
+* {
+	font-family: "Poppins";
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	display: inline;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+main::after {
+	clear: both;
+	display: table;
+}
+
+html {
+	/* background-color: var(--temp); */
+	scroll-behavior: smooth;
+}
+
+#home {
+	padding: 75px;
+	width: 100%;
+	background-image: linear-gradient(to right, var(--grad), var(--primary));
+	color: white;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+nav {
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+  position: sticky;
+  top: 0px;
+}
+
+nav a {
+	border-radius: 5px;
+	margin-right: 5px;
+	padding: 5px 12px;
+	background-image: linear-gradient(to bottom right, var(--grad), var(--primary));
+	color: white;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+	text-decoration: none;
+	transition: padding .15s;
+}
+
+nav a:hover {
+	padding: 6px 13px;
+	font-weight: 600;
+}
+
+nav a:active {
+	padding: 4px 11px
+}
+
+.card {
+	padding: 20px;
+	margin-top: 20px;
+	border: 5px;
+	border-radius: 15px;
+	box-shadow: inset -3px -3px 7px var(--primary), inset 3px 3px 7px var(--grad);
+	overflow: auto;
+}
+
+#divisi img {
+  float: left;
+  margin-right: 30px;
+	background-image: linear-gradient(to right, var(--grad), var(--primary));
+	padding: 16px;
+	border-radius: 15px;
+}
+
+#divisi p {
+	width: 500px;
+}
+
+#divisi {
+	display: inline;
+}
+
+.foto {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.foto img {
+	margin-top: 30px;
+	width: 50%;
+	border-radius: 100%;
+}
+
+.img h2, p {
+	display: block;
+}
+
+.btn {
+	text-align: center;
+}
+
+.btn .button {
+	margin-top: 16px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--secondary);
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: font-weight .35s, background-color .35s, transform .35s;
+}
+
+.btn .button:hover {
+	font-weight: bold;
+	background-color: #cfa423;
+	transform: translateY(-5px);
+}
+
+.container {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+.box {
+	width: 230px;
+	height: 290px;
+	background-image: linear-gradient(to bottom right, var(--grad), var(--primary));
+	border-radius: 15px;
+}
+
+.box h2 {
+	color: white;
+	padding: 16px;
+	text-align: center;
+}
+
+.box p {
+	width: 230px;
+	color: white;
+	padding: 0px 16px;
+	text-align: center;
+}
+
+.oketrip {
+	margin-bottom: 100px;
+}
+
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
+#content {
+	float: left;
+	width: 75%;
+}
+
+footer {
+	display: flex;
+	background-image: linear-gradient(to right, var(--grad), var(--primary));
+	padding: 1px;
+	color: white;
+}
+
+footer p {
+	margin-top: 35px;
+	margin-left: 64px;
+}
+
+.icon {
+	margin-top: 35px;
+	margin-left: 680px;
+}
+
+.icon a {
+	color: white;
+	margin-right: 8px;
+}
+
+ion-icon {
+	font-size: 25px;
+	transition: transform .35s;
+}
+
+ion-icon:hover {
+	transform: translateY(-5px);
+}
+
+.info {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.info a {
+	text-decoration: none;
+	color: blue;
+}
+
+.gkm {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.gkm img {
+	border-radius: 25px;
+}
+
+aside .card {
+	padding: 20px;
+	margin-top: 20px;
+	border: 5px;
+	border-radius: 15px;
+	box-shadow: -3px -3px 7px var(--primary), 3px 3px 7px var(--grad);
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
